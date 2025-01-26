@@ -130,12 +130,12 @@ def main():
 				selected_zip_file=zip_files[zip_choice-1];plugin_inner_name=input(f"{Fore.CYAN}Enter name of Shell.php in {Style.RESET_ALL}{Fore.YELLOW}{selected_zip_file}{Fore.YELLOW}: ").strip();plugin_files.append((os.path.join(plugin_folder,selected_zip_file),plugin_inner_name))
 		clear_terminal();display_combined_ascii_art();terminal_width=shutil.get_terminal_size().columns;line=A*31;centered_line=line.center(terminal_width);print(Fore.GREEN+centered_line);check_rate_limit(decrypted_token);print(f"{Fore.GREEN}{A*shutil.get_terminal_size().columns}")
 		if choice==6:
-			print(f"{Fore.YELLOW}[INFO]{Fore.CYAN} Check For {Fore.YELLOW}{selected_script_name} {Fore.CYAN}List {Fore.YELLOW}{file_name}{Fore.CYAN} Use {Fore.YELLOW}{max_workers} {Fore.CYAN}Threads{Style.RESET_ALL}")
+			print(f"{Fore.YELLOW}[INFO]{Fore.CYAN} Check For {Fore.YELLOW}{selected_script_name}{Fore.CYAN} Use {Fore.YELLOW}{max_workers} {Fore.CYAN}Threads {Fore.CYAN}for List {Fore.YELLOW}{file_name}{Style.RESET_ALL}")
 			for(i,(plugin_zip_name,plugin_inner_name))in enumerate(plugin_files,start=1):
 				if i==1:print(f"{Fore.YELLOW}[INFO] {Style.RESET_ALL}{i}.{Fore.CYAN} Plugin File {Fore.YELLOW}{plugin_zip_name} {Fore.CYAN}Name Shell.php {Fore.YELLOW}{plugin_inner_name}")
 				else:print(f"       {i}. {Fore.CYAN}Plugin File {Fore.YELLOW}{plugin_zip_name} {Fore.CYAN}Name Shell.php {Fore.YELLOW}{plugin_inner_name}")
 			print(f"{Fore.GREEN}{A*shutil.get_terminal_size().columns}")
-		else:print(f"{Fore.YELLOW}[INFO]{Fore.CYAN} Check For {Fore.YELLOW}{selected_script_name} {Fore.CYAN}List {Fore.YELLOW}{file_name}{Fore.CYAN} Use {Fore.YELLOW}{max_workers} {Fore.CYAN}Threads{Style.RESET_ALL}");print(f"{Fore.GREEN}{A*shutil.get_terminal_size().columns}")
+		else:print(f"{Fore.YELLOW}[INFO]{Fore.CYAN} Check For {Fore.YELLOW}{selected_script_name}{Fore.CYAN} Use {Fore.YELLOW}{max_workers} {Fore.CYAN}Threads{Style.RESET_ALL} {Fore.CYAN}for List {Fore.YELLOW}{file_name}");print(f"{Fore.GREEN}{A*shutil.get_terminal_size().columns}")
 		if choice==6:execute_script_from_url(selected_script,os.path.join(target_folder,file_name),max_workers,decrypted_token,plugin_files)
 		else:execute_script_from_url(selected_script,os.path.join(target_folder,file_name),max_workers,decrypted_token)
 if __name__=='__main__':main()
