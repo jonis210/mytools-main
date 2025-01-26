@@ -6,4 +6,4 @@
   Wordpress - Woocommerce, File manager, Auto Upload and install Plugins
 </div>
 <br>
-<center><b><a href="t.me/Zsky210">Contact Me</a> for DEMO</b></center>
+<center><b><a href="">t.me/Zsky210</a> for DEMO</b></center>
